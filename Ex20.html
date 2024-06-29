@@ -1,0 +1,41 @@
+<html>
+
+<head>
+
+<title>Ex20</title>
+
+<script language="JavaScript">
+
+function moveTxt() {
+  if (parseInt(anil.style.left) < 900) {
+    anil.style.left = parseInt(anil.style.left) + 2 + "px"; 
+    setTimeout(moveTxt, 50);
+  }
+}
+
+</script>
+
+</head>
+
+<body onLoad="moveTxt()">
+
+<div style="background:red; height:350px; width:350px;
+position:relative; font-size:50px; z-index:3; color: white">
+
+Это<br>
+
+ближе
+
+</div>
+
+<div id="anil" style="background:url('picture.jfif'); height:380px; width:600px;
+top:62px; left:100px; position:absolute; z-index:2">
+</div>
+
+<div style="background:blue; height:350px; width:350px;
+position:absolute; top:10px; left:500px; color:white; font-size:25px;
+z-index:1">Это дальше</div>
+
+</body>
+
+</html>
